@@ -44,13 +44,13 @@ function Experience() {
       <ul>
         {careerRoles.map((role, index) => (
           <li key={index}>
-            <p class="title">{role.title}</p>
-            <p class="company">{role.company}</p>
-            <p class="date-range">
+            <p className="title">{role.title}</p>
+            <p className="company">{role.company}</p>
+            <p className="date-range">
               {role.startDate.toLocaleDateString()} -{" "}
               {role.endDate ? role.endDate.toLocaleDateString() : "Present"}
             </p>
-            <p class="description">{role.description}</p>
+            <p className="description">{role.description}</p>
           </li>
         ))}
       </ul>

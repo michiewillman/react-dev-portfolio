@@ -3,14 +3,12 @@ import "./Portfolio.css";
 import Project from "../Project/Project";
 
 function Portfolio() {
-  // Portfolio project details
   const [projects] = useState([
     {
       title: "Something Borrowed",
-      type: "Web Application",
       description:
         "Fosters community relationships & reduces via borrowing and lending items with neighbors.",
-      technologies: ["Node.js", "Express.js", "React"],
+      tech: ["Node.js", "Express.js", "React"],
       image: "somethingborrowed.jpg",
       details:
         "Something Borrowed is an application created to foster quality community connections while eliminating unnecessary consumer purchases through borrowing and lending everyday products. The app currently runs on community accountability, however the application has the potential to be upgraded to using fee-per-day rentals from locals in your neighborhood.",
@@ -19,11 +17,34 @@ function Portfolio() {
       repo: "https://github.com/michiewillman/something-borrowed",
     },
     {
-      title: "Blizzard MG",
-      type: "Web Application",
+      title: "Powell Custom Theme",
       description:
-        "An Application built for people with Myasthenia Gravis to manage their medications and symptoms.",
-      technologies: ["Node.js", "Express.js", "React"],
+        "A full site editing theme created for our agency, Stellaractive. Named after the street on which our office resides, Powell uses WordPress' native Gutenberg editor to create a complete brand-focused environment for developers, designers and content managers alike.",
+      tech: ["WordPress", "Gutenberg"],
+    },
+    {
+      title: "NW Performance",
+      description:
+        "This simple brochure website for a local HVAC company was the perfect candidate for the first build to use our custom Powell theme.",
+      tech: ["WordPress", "Gutenberg"],
+    },
+    {
+      title: "Argus Corp.",
+      description:
+        "This brochure website was my first completely solo build on the Stellaractive development team. It was a great introduction to the frontend intracacies of our process using the Timber/Twig templating system.",
+      tech: ["WordPress", "Timber", "Twig", "JavaScript"],
+    },
+    {
+      title: "Stellaractive Website",
+      description:
+        "I jointed the Stellaractive's development team amidst building their newly re-vamped website. While most of the build was already handled at that time, I was thrilled to hop on board and dive into QC and touch-up work, as well as create a few new post types. I am currently building out a new Help section to act as a guide for both our clients and global WordPress site owners.",
+      tech: ["WordPress", "Timber", "Twig", "JavaScript", "Custom Post Types"],
+    },
+    {
+      title: "Blizzard MG",
+      description:
+        "I started this application during bootcamp intended for people with Myasthenia Gravis to manage their medications and symptoms for a better quality of life. As someone with MG, I have struggled in the past with these areas and wanted to help others facing the same challenges. I'm currently working on a rebuild in React Native for the iOS and Android stores.",
+      tech: ["Node.js", "Express.js", "React"],
       image: "blizzardmg.jpg",
       details: "",
       link: "https://blizzard-mg-2139349e4552.herokuapp.com/",
@@ -31,24 +52,32 @@ function Portfolio() {
       repo: "https://github.com/michiewillman/mgapp",
     },
     {
-      title: "CampAire",
-      type: "Web Application",
-      description:
-        "Fosters community relationships & reduces via borrowing and lending items with neighbors.",
-      technologies: ["Node.js", "Express.js", "React"],
-      image: "campaire.jpg",
+      title: "Something Borrowed",
+      description: "",
+      tech: ["Node.js", "Express.js", "React"],
+      // image: "campaire.jpg",
       details:
-        "Something Borrowed is an application created to foster quality community connections while eliminating unnecessary consumer purchases through borrowing and lending everyday products. The app currently runs on community accountability, however the application has the potential to be upgraded to using fee-per-day rentals from locals in your neighborhood.",
-      link: "https://michiewillman.github.io/campaire-app/",
-      hasRepo: true,
-      repo: "https://github.com/michiewillman/campaire-app",
+        "Something Borrowed is an application created to foster quality community connections while eliminating unnecessary consumer purchases through borrowing and lending everyday products.",
+      // link: "https://michiewillman.github.io/campaire-app/",
+      // hasRepo: true,
+      // repo: "https://github.com/michiewillman/campaire-app",
+    },
+    {
+      title: "CampAire",
+      description: "",
+      // tech: ["Node.js", "Express.js", "React"],
+      // image: "campaire.jpg",
+      // details:
+      //   "Something Borrowed is an application created to foster quality community connections while eliminating unnecessary consumer purchases through borrowing and lending everyday products.",
+      // link: "https://michiewillman.github.io/campaire-app/",
+      // hasRepo: true,
+      // repo: "https://github.com/michiewillman/campaire-app",
     },
     {
       title: "Flying Black Cat",
-      type: "E-Commerce Website",
       description:
         "Flying Black Cat - A brand geared towards young aviators and cat-lovers alike. Tells the story of one epic cat.",
-      technologies: ["Wordpress", "WooCommerce", "E-Commerce", "Yoast SEO"],
+      tech: ["Wordpress", "WooCommerce", "E-Commerce", "Yoast SEO"],
       image: "flyingblackcatmock.jpg",
       details:
         "For more about the legend of the Flying Black Cat visit www.flyingblackcat.com.",
@@ -57,9 +86,8 @@ function Portfolio() {
     },
     {
       title: "Ariav Investments",
-      type: "Wordpress Website",
       description: "Ariav Investments",
-      technologies: ["Node.js", "Express.js", "React"],
+      tech: ["Node.js", "Express.js", "React"],
       image: "ariavmock.jpg",
       details: "Ariav Investments",
       link: "http://ariav.com/",
@@ -67,10 +95,9 @@ function Portfolio() {
     },
     {
       title: "Daily Schedule Manager",
-      type: "Web Application",
       description:
         "Assists you with managing your daily tasks using local storage.",
-      technologies: ["Local Storage"],
+      tech: ["HTML", "CSS"],
       image: "workdayscheduler.jpg",
       details: "Just type it in, and save it!",
       link: "https://michiewillman.github.io/workday-scheduler/",

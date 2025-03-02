@@ -1,33 +1,77 @@
-// import DetailBar from "../../components/Detail Bar/DetailBar";
+import "./Skills.css";
 
-const mySkills = [
+const allSkills = [
   {
-    title: "Node.js",
-    description: "Runtime",
+    title: "HTML",
+    type: "Language",
+  },
+  {
+    title: "CSS",
+    type: "Language",
+  },
+  {
+    title: "JavaScript",
+    type: "Language",
+  },
+  {
+    title: "PHP",
+    type: "Language",
   },
   {
     title: "React",
-    description: "Framework",
+    type: "Framework",
   },
   {
-    title: "Express.js",
-    description: "Framework",
+    title: "TypeScript",
+    type: "",
   },
   {
-    title: "Adobe Creative Suite",
-    description: "Design Tool",
+    title: "Timber/Twig",
+    type: "",
   },
   {
-    title: "Wordpress",
-    description: "CMS",
+    title: "Custom themes",
+    type: "",
+  },
+  {
+    title: "Gutenberg blocks",
+    type: "",
+  },
+  {
+    title: "SASS",
+    type: "",
+  },
+  {
+    title: "Git version control",
+    type: "",
+  },
+  {
+    title: "Google Tag Manager",
+    type: "SEO",
+  },
+  {
+    title: "Google APIs",
+    type: "APIs",
+  },
+  {
+    title: "Third-party APIs",
+    type: "APIs",
+  },
+  {
+    title: "WordPress",
+    type: "CMS",
+  },
+  {
+    title: "Adobe Photoshop",
+    type: "Design Tool",
+  },
+  {
+    title: "Adobe InDesign",
+    type: "Design Tool",
   },
   {
     title: "Figma",
-    description: "Design Tool",
-  },
-  {
-    title: "HTML, CSS, Javascript",
-    description: "Languages",
+    type: "Design Tool",
   },
 ];
 
@@ -35,10 +79,12 @@ function Skills() {
   return (
     <section id="skills-section">
       <div className="flex-container">
-        <div className="detailBar">
-          <h3 className="barTitle">Design Forward</h3>
-          <p className="barDescription">Short Description</p>
-        </div>
+        {allSkills.map((skill, index) => (
+          <div className="skill" key="{index}">
+            <h3 className="title">Design Forward</h3>
+            <p className="description">Short Description</p>
+          </div>
+        ))}
       </div>
     </section>
   );
