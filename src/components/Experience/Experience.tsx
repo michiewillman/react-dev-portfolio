@@ -3,7 +3,7 @@ import "./Experience.css";
 function Experience() {
   const careerRoles = [
     {
-      title: "Front End Developer",
+      title: "Frontend Developer",
       company: "Stellaractive",
       startDate: new Date("2023-11-23"),
       description:
