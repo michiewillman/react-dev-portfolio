@@ -1,0 +1,7 @@
+#skills-section {
+  display: grid;
+}
+
+.skill {
+  background-color: black;
+}
