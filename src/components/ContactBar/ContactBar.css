@@ -1,0 +1,12 @@
+#contact-bar {
+  position: sticky;
+  bottom: 0;
+  /* right: 90vw; */
+  left: 90px;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 200px;
+  background-color: var(--gold);
+}

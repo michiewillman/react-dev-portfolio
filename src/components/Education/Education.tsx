@@ -2,7 +2,7 @@ import "./Education.css";
 
 function Education() {
   return (
-    <div>
+    <section id="education">
       <div className="education-card">
         <p className="school">University of Oregon</p>
         <p className="title">Certificate in Full Stack Web Development</p>
@@ -16,7 +16,7 @@ function Education() {
         <p className="year">2016</p>
         <p className="location">Jacksonville, FL</p>
       </div>
-    </div>
+    </section>
   );
 }
 

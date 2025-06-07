@@ -43,21 +43,26 @@ function Experience() {
   ];
 
   return (
-    <div>
-      <ul>
+    <section id="experience" className="layout-constrain-1000">
+      <ul className="roles">
         {careerRoles.map((role, index) => (
-          <li key={index}>
-            <p className="title">{role.title}</p>
-            <p className="company">{role.company}</p>
-            <p className="date-range">
-              {role.startDate.toLocaleDateString()} -{" "}
-              {role.endDate ? role.endDate.toLocaleDateString() : "Present"}
-            </p>
-            <p className="description">{role.description}</p>
+          <li key={index} className="role flex-row">
+            <div className="role-timeline">
+              <div className="timeline-dot"></div>
+            </div>
+            <div className="role-details">
+              <p className="title">{role.title}</p>
+              <p className="company">{role.company}</p>
+              <p className="date-range">
+                {role.startDate.toLocaleDateString()} -{" "}
+                {role.endDate ? role.endDate.toLocaleDateString() : "Present"}
+              </p>
+              <p className="description">{role.description}</p>
+            </div>
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }
 

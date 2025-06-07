@@ -6,6 +6,7 @@ import Skills from "./components/Skills/Skills";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Experience from "./components/Experience/Experience";
 import Education from "./components/Education/Education";
+import ContactBar from "./components/ContactBar/ContactBar";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,11 +14,15 @@ function App() {
   return (
     <>
       <Navigation />
-      <About />
-      <Skills />
-      <Portfolio />
-      <Experience />
-      <Education />
+      <section id="main">
+        <h1>Michie Willman</h1>
+        <About />
+        <Skills />
+        <Portfolio />
+        <Experience />
+        <Education />
+        <ContactBar />
+      </section>
     </>
   );
 }

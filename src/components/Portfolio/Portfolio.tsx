@@ -3,7 +3,7 @@ import "./Portfolio.css";
 import Project from "../Project/ProjectTeaser";
 
 function Portfolio() {
-  const [projects] = useState([
+  const [allProjects] = useState([
     {
       title: "Something Borrowed",
       shortDescription:
@@ -55,23 +55,23 @@ function Portfolio() {
       title: "Something Borrowed",
       shortDescription: "",
       tech: ["Node.js", "Express.js", "React"],
-      // image: "campaire.jpg",
+      image: "campaire.jpg",
       longDescription:
         "Something Borrowed is an application created to foster quality community connections while eliminating unnecessary consumer purchases through borrowing and lending everyday products.",
-      // link: "https://michiewillman.github.io/campaire-app/",
-      // hasRepo: true,
-      // repo: "https://github.com/michiewillman/campaire-app",
+      link: "https://michiewillman.github.io/campaire-app/",
+      hasRepo: true,
+      repo: "https://github.com/michiewillman/campaire-app",
     },
     {
       title: "CampAire",
       shortDescription: "",
-      // tech: ["Node.js", "Express.js", "React"],
-      // image: "campaire.jpg",
-      // longDescription:
-      //   "Something Borrowed is an application created to foster quality community connections while eliminating unnecessary consumer purchases through borrowing and lending everyday products.",
-      // link: "https://michiewillman.github.io/campaire-app/",
-      // hasRepo: true,
-      // repo: "https://github.com/michiewillman/campaire-app",
+      tech: ["Node.js", "Express.js", "React"],
+      image: "campaire.jpg",
+      longDescription:
+        "Something Borrowed is an application created to foster quality community connections while eliminating unnecessary consumer purchases through borrowing and lending everyday products.",
+      link: "https://michiewillman.github.io/campaire-app/",
+      hasRepo: true,
+      repo: "https://github.com/michiewillman/campaire-app",
     },
     {
       title: "Flying Black Cat",
@@ -107,14 +107,14 @@ function Portfolio() {
   ]);
 
   return (
-    <div>
-      <div className="flex-row">
-        {/* For each project in the array, render a Project component with a unique key and pass the project longDescription */}
-        {projects.map((project, index) => (
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div className="projects flex-row">
+        {allProjects.map((project, index) => (
           <Project project={project} key={"project" + index} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 
