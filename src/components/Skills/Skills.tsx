@@ -77,12 +77,16 @@ const allSkills = [
 
 function Skills() {
   return (
-    <section id="skills-section">
-      <div className="flex-container">
+    <section id="skills" className="layout-constrain-1000">
+      <h2>Technologies I work with</h2>
+      <div className="skill-list">
         {allSkills.map((skill, index) => (
-          <div className="skill" key="{index}">
-            <h3 className="title">Design Forward</h3>
-            <p className="description">Short Description</p>
+          <div className="skill flex-row" key={index}>
+            <div className="badge">X</div>
+            <div>
+              <h3 className="title">{skill.title}</h3>
+              <p className="description">{skill.type}</p>
+            </div>
           </div>
         ))}
       </div>

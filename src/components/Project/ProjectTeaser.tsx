@@ -7,7 +7,7 @@ function Project({ project }) {
     <div className="project-teaser" key={title}>
       <a className="btn" href={link}>
         <img
-          src={require(`../../assets/${image}`)}
+          src={`../../assets/${image}`}
           alt={title}
           className="project-image"
         />
@@ -16,7 +16,7 @@ function Project({ project }) {
           <p>{longDescription}</p>
           <ul className="tech-list">
             {tech.map((item, index) => (
-              <li key="tech-{index}">{item}</li>
+              <li key={"tech" + index}>{item}</li>
             ))}
           </ul>
           {/* If project hasRepo = true, ender a repo button */}

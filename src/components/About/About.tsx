@@ -2,7 +2,8 @@
 
 function About() {
   return (
-    <div>
+    <section id="about" className="layout-constrain-1000">
+      <h2>About Me</h2>
       <p>
         I’m a Frontend Developer passionate about leveraging my experience in
         design and communications to build creative technology people will love
@@ -12,7 +13,7 @@ function About() {
         content management, and love sharing my knowledge directly with clients
         in a straight-forward way that even beginners can follow.
       </p>
-    </div>
+    </section>
   );
 }
 
